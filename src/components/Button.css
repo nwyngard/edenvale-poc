@@ -1,0 +1,52 @@
+/* Base reset & typography */
+.btn {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  
+  /* Hover/active states */
+  .btn:not(:disabled):hover {
+    transform: scale(1.05);
+  }
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Variants */
+  .btn--primary {
+    background-color: #A2D25F;
+    color: #333959;
+    border-radius: 25px;
+  }
+  
+  .btn--secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+  }
+  
+  /* Sizes */
+  .btn--sm {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+  }
+  .btn--md {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+  .btn--lg {
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+  }
+  

@@ -1,0 +1,202 @@
+.contact-section {
+  background-color: #333959;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-height: 70vh;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  position: relative;
+}
+
+.contact-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+  min-height: 160px;
+}
+
+.contact-heading {
+  color: #ffffff;
+}
+
+.contact-body {
+  font-family: 'URWClassico', serif;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  white-space: pre-line;
+}
+
+.contact-body a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+  align-items: stretch;
+  justify-content: center;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-datepicker {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  font-family: 'URWClassico', serif;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fff;
+}
+
+.contact-form input:focus,
+.contact-datepicker:focus {
+  border-color: #103469;
+}
+
+.contact-form button {
+  margin-top: 24px;
+  width: auto;
+  align-self: center;
+}
+
+/* Datepicker input wrapper */
+.datepicker-wrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.calendar-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #103469;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+/* Push text to the right of icon */
+.contact-datepicker {
+  padding-left: 40px;
+}
+
+/* Ensure full width on internal wrapper */
+.react-datepicker-wrapper {
+  width: 100% !important;
+  display: block;
+}
+
+.react-datepicker-popper {
+  z-index: 1000 !important;
+  position: absolute !important;
+}
+
+.custom-datepicker {
+  font-family: 'URWClassico', serif;
+  border-radius: 8px;
+  border-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeZoom 0.25s ease-out;
+}
+
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.react-datepicker__header {
+  background-color: #333959;
+  color: #fff;
+  border-bottom: none;
+  padding-top: 12px;
+  text-align: center;
+}
+
+.react-datepicker__current-month {
+  color: #fff;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.react-datepicker__day-name {
+  color: #fff;
+  font-weight: 500;
+}
+
+.react-datepicker__navigation--previous {
+  display: none;
+}
+
+.react-datepicker__navigation--next {
+  right: 10px;
+  top: 10px;
+}
+
+.react-datepicker__navigation-icon::before {
+  font-size: 1rem;
+  top: 6px;
+  line-height: 1;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #333959;
+  color: #fff;
+}
+
+.react-datepicker__triangle {
+  display: none;
+}
+
+/* Fade effect wrapper */
+.contact-body-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.contact-body-wrapper.fade-mask {
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  transition: mask-image 0.3s ease;
+}
+
+
+
+
+
+
+
+

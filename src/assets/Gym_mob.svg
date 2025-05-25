@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 12.32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #103469;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Gym">
+    <path class="cls-1" d="M.96,7.29s-.03,0-.05,0c-.5,0-.91-.51-.91-1.13s.41-1.13.91-1.13c.02,0,.03,0,.05,0V1.71h1.81V0h2.66v5.03h14.2V0h2.66v1.71h1.81v3.31c.5,0,.91.51.91,1.13s-.41,1.13-.91,1.13v3.31h-1.81v1.71h-2.66v-5.03H5.43v5.03h-2.66v-1.71H.96v-3.31Z"/>
+  </g>
+</svg>

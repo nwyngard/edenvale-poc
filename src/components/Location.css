@@ -1,0 +1,23 @@
+.location-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-intro h2 {
+  color: #103469;
+}
+
+.intro-paragraph {
+  color: #000;
+}
+
+.location-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+

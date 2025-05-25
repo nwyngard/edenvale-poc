@@ -1,0 +1,94 @@
+.values-section {
+  background-color: #ffffff;
+  padding: 120px 20px 120px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.values-section__block {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center; /* changed from start */
+  margin-bottom: 120px;
+}
+
+@media (min-width: 768px) {
+  .values-section__block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .location-block {
+    grid-template-areas: "image text";
+  }
+  .lifestyle-block {
+    grid-template-areas: "text image";
+  }
+  .location-block .values-section__image {
+    grid-area: image;
+  }
+  .location-block .values-section__text {
+    grid-area: text;
+  }
+  .lifestyle-block .values-section__image {
+    grid-area: image;
+  }
+  .lifestyle-block .values-section__text {
+    grid-area: text;
+  }
+}
+
+.values-section__image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.values-section__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(-10%); /* slight upward offset */
+}
+
+.values-section__label {
+  font-family: 'URWClassico', serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #75787B;
+  margin-bottom: 8px;
+}
+
+.values-section__heading {
+  font-family: 'URWClassico', serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #103469;
+  margin-bottom: 10px;
+}
+
+.values-section__body {
+  font-family: 'URWClassico', serif;
+  font-size: 20px;
+  color: #000;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.values-section__button {
+  display: inline-block;
+  margin-top: 24px;
+  font-family: 'URWClassico', serif;
+  font-size: 16px;
+  padding: 12px 24px;
+  background-color: #333959;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  width: fit-content;
+}
+  
+  

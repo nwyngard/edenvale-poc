@@ -1,0 +1,160 @@
+.collections-section {
+  background-color: #DBE9F0;
+  position: relative;
+  overflow: hidden;
+}
+
+.collections-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Plant backgrounds */
+.bg-plant-left,
+.bg-plant-right {
+  position: absolute;
+  width: 400px;
+  top: 20px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-plant-left {
+  left: 0;
+}
+
+.bg-plant-right {
+  right: 0;
+}
+
+@media (max-width: 1024px) {
+  .bg-plant-left,
+  .bg-plant-right {
+    display: none;
+  }
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+@media (min-width: 881px) {
+  .collections-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.collection-card {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1;
+}
+
+.collection-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(51, 57, 89, 0.4);
+  z-index: 1;
+}
+
+.collection-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  padding: 24px 32px;
+  max-width: 80%;
+  margin-bottom: 40px;
+  border-radius: 0 0 16px 16px;
+  background-color: rgba(51, 57, 89, 0.3);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.collection-title {
+  color: #ffffff;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+
+.collection-description {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.collection-btn {
+  margin-top: 1rem;
+}
+
+/* Mid-size responsiveness improvements */
+@media (max-width: 1140px) {
+  .collection-inner {
+    max-width: 92%;
+    font-size: 15px;
+    padding: 24px 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .collection-inner {
+    max-width: 95%;
+    font-size: 14.5px;
+    padding: 24px 32px;
+  }
+}
+
+@media (max-width: 900px) {
+  .collection-inner {
+    font-size: 14px;
+    padding: 20px 28px;
+  }
+}
+
+@media (max-width: 880px) {
+  .collection-card {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .collection-inner {
+    background-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    margin-bottom: 0;
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .collection-title {
+    font-size: 25px;
+  }
+
+  .collection-description {
+    font-size: 16px;
+  }
+
+  .collection-overlay {
+    background: rgba(51, 57, 89, 0.7);
+  }
+}
+
+
+
+
+
